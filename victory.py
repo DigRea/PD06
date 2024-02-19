@@ -42,7 +42,7 @@ def victory():
         print()
         for i in range(len(selection)):
             person = input(f'Введите дату рождения следующего музыканта:\n{selection[i]}: ')
-            answer =people.get(selection[i])
+            answer = people.get(selection[i])
             if person != answer:
                 day, month, year = answer.split('.')
                 result = days[day] + ' ' + months[month] + ' ' + year + ' ' + 'года'
